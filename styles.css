@@ -1,0 +1,156 @@
+body {
+    background-color: #F3EAE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 12px;
+}
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500, 700;
+    font-style: normal;
+}
+
+.fraunces-font {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+#main-text {
+    padding: 20px;
+}
+
+.sale-text {
+    text-decoration: line-through;
+}
+
+.bold-pricing {
+    padding: 10px;
+}
+
+p, h1, h2, h3, h4 {
+    padding: 8px;
+}
+
+.purchase {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+.purchase-btn {
+    background-color: #3D8168;
+    color: #f5f2ed;
+    width: 170px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.purchase-btn img {
+    margin-right: 10px;
+}
+
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: 4px;
+    color: grey;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #191F25;
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+p {
+    color: grey;
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.bold-pricing {
+    color: #3D8168;
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sale-text {
+    color: grey;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+/* Styles for screens larger than 600px */
+@media (min-width: 400px) {
+    #price-container {
+        display: flex;
+        flex-direction: row;
+        max-height: 500px;
+        max-width: 560px;
+        background-color: #f5f2ed;
+        border-radius: 20px;
+    }
+
+    .mobile-perfume {
+        display: none;
+    }
+
+    .desktop-perfume {
+        max-height: 460px;
+        max-width: 300px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
+
+/* Styles for screens narrower than 600px */
+@media (max-width: 599px) {
+
+    #price-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        max-height: 800px;
+        background-color: #f5f2ed;
+        border-radius: 20px;
+        padding: 0px 0px 20px;
+        overflow: hidden;
+    }
+
+    .mobile-perfume {
+        display: flex;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .desktop-perfume {
+        display: none;
+    }
+}
